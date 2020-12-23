@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('cool-background.png');
+}
+
+.content {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reselect {
+  font-size: 15px;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'EB Garamond', serif;
+  font-size: 25px;
+  color: white;
+  width: 125px;
+  height: 60px;
+  text-shadow: 0 2px 5px black;
+  background-color: transparent;
+  border: 0.1em solid #fff;
+  border-radius: 7px;
+  box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.4),
+    0 12px 12px 0 rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  outline: none;
+}
+
+button:hover {
+  color: aqua;
+  background-color: transparent;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.disabled {
+  pointer-events: none;
+}
